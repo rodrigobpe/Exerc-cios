@@ -13,16 +13,16 @@
 
     $soma = $N1+$N2+$N3+$N4;
     $media = $soma/4;
-
    
 
-    if ($media>7)  {
+    if ($media>=7)  {
         print "\n";
         echo "\nVocẽ foi aprovado\n";
         print "\nA sua média trimestral foi de $media \n\n";
+      
+        }
         
-
-    } else {
+        else {
         print "\n";
         echo "\nVocê foi reprovado\n";
         print "\nA sua média trimestral foi de $media \n\n";
