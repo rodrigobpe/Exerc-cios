@@ -1,37 +1,55 @@
 <?php
-
-    $nota=0;
-    print "Digite o número desejado: ";
-    $nota= fgets (STDIN);
+    print "Informe um Nome de usuário:";
     print "\n";
+    $Nome_Usuario= fgets (STDIN);
+    print "Informe uma senha: ";
+    print "\n";
+    $Senha= fgets (STDIN);
 
-     while ($nota<0 or $nota>10) {
+    print "Digite um Nome de usuário:";
+    print "\n";
+    $Login_Usuario= fgets (STDIN);
+    print "Digite uma senha: ";
+    print "\n";
+    $Login_Senha= fgets (STDIN);
 
-            if ($nota< 0 ){
-                print "---ATTENCION--- ";
-                print "\n\n";
-                print "Número inválido, esta nota é menor do que o sistema permite";
-                print "\n\n";
-                print "por favor tente novamente";
-                print "\n\n";
-                print "Digite o número desejado: ";
-                $nota= fgets (STDIN);
-
-               }
-
-            else {print "---ATTENCION---";
-                print "\n\n";
-                print "Número inválido, esta nota é Maior do que o sistema permite";
-                print "\n\n";
-                print "por favor tente novamente!!";
-                print "\n\n";
-                print "Digite o número desejado: ";
-                $nota= fgets (STDIN);
+    while ( $Senha<>$Login_Senha or $Nome_Usuario<>$Login_Usuario){
+        
+            if ($Login_Usuario<>$Nome_Usuario){
+                print "----ATENÇÂO----";
+                print "\n";
+                print "Nome do usuário Esta incorreto";
+                print "\n";
+                print "Por favor,Tente novamente";
+                print "\n";
+                print "Digite o Nome de usuário:";
+                print "\n";
+                $Nome_Usuario= fgets (STDIN);
+                print "\n";
+        
+            
             }
-            
-            
+
+            else{
+                print "----ATENÇÂO----";
+                print "\n";
+                print "Sua senha está incorreta";
+                print "\n";
+                print "Por favor,tente novamente";
+                print "\n";
+                print "Digite uma senha: ";
+                print "\n";
+                $Senha= fgets (STDIN);
+                
+                }
     }
+        print "\n";
+        print "Login efetuado com sucesso";
+        print "\n";
+    
+        
+            
+     
 
-    print " Nota válida";
-    print "\n\n";
 
+  
