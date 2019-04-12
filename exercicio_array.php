@@ -2,11 +2,12 @@
 
 print "-----TOP FIVE ANIMES DO WORLD----- \n\n\n";
 
-$herois= ['Nanatsu No Taizai','Sword Art Online','Naruto','One Piece','Dragon Ball'];
+$herois= ['Nanatsu No Taizai','Sword Art Online','Naruto','One Piece','Dragon Ball','Promisse Nerverland','Shield Heroe'];
 
-for ($i=0; $i < 5; $i++)  { 
+for ($i=0; $i < count($herois); $i++)  { 
 
     print ($i+1)."º lugar: \n" . $herois[$i] . "\n\n";
     sleep(1);
+
 }
 
